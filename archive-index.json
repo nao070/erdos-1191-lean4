@@ -346,5 +346,5 @@
     "containers_expanded_and_scanned": true,
     "unreviewed_images_and_office_files_retained_locally": true
   },
-  "legacy_cleanup": "legacy Release attachments removed; main replaced; repository deletion scope unavailable; unreachable objects not guaranteed purged"
+  "legacy_cleanup": "legacy repository deleted after verified sanitized migration"
 }
