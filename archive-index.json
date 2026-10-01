@@ -18,7 +18,7 @@
         "digest": "sha256:bba154dc0db0ccb2df9ce57f9c1eb1202751813dd5174a0aa229d9ede40b2c39"
       },
       "verified": true,
-      "deleted": false,
+      "deleted": true,
       "logical_bytes": 1884787,
       "compressed_bytes": 1138520,
       "parts": 1,
@@ -31,7 +31,13 @@
         "public_pdf_fragments_inspected": 2,
         "expanded_containers": 4,
         "excluded_rebuildable_or_metadata": 3
-      }
+      },
+      "removed_sources": [
+        "erdos1191",
+        "Documents/2026math",
+        "Documents/erdos1191-research"
+      ],
+      "retained_sources": []
     },
     {
       "dataset_id": "20261001T002841Z-bad6a3-mathematics-workspaces",
@@ -336,6 +342,32 @@
         "Desktop/c143_sample.txt"
       ],
       "retained_sources": []
+    },
+    {
+      "dataset_id": "20261001T035220Z-5f534e-erdos677-experiment-results",
+      "label": "erdos677-experiment-results",
+      "sources": [
+        "Downloads/erdos677-search"
+      ],
+      "manifest_asset": {
+        "id": 602393944,
+        "name": "20261001T035220Z-5f534e-erdos677-experiment-results-manifest.json",
+        "size": 73838,
+        "digest": "sha256:49ab517ec9595b2a6beecdff5d3b4de8be440e84fcda62a3f1fcef39e023d7e3"
+      },
+      "verified": true,
+      "deleted": false,
+      "logical_bytes": 23629202575,
+      "compressed_bytes": 11215021723,
+      "parts": 335,
+      "files": 41,
+      "privacy": {
+        "holds": [],
+        "held": 0,
+        "text_files_inspected": 40,
+        "replacements": 0,
+        "binary_bytes_inspected": 23627169792
+      }
     }
   ],
   "completed": false,
