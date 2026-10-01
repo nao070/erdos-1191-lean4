@@ -115,6 +115,29 @@
         "lean4-mcp/small-sorry-project-src"
       ],
       "retained_sources": []
+    },
+    {
+      "dataset_id": "20261001T005202Z-a40ec9-privacy-reviewed-pdf-objects",
+      "label": "privacy-reviewed-pdf-objects",
+      "sources": [],
+      "manifest_asset": {
+        "id": 602107879,
+        "name": "20261001T005202Z-a40ec9-privacy-reviewed-pdf-objects-manifest.json",
+        "size": 673,
+        "digest": "sha256:13f6d3cc89a9c98bd1718e62c04b6df2ac521aaf84442e8d807642154b01910f"
+      },
+      "verified": true,
+      "deleted": false,
+      "logical_bytes": 0,
+      "compressed_bytes": 435838,
+      "parts": 1,
+      "files": 0,
+      "privacy": {
+        "holds": [],
+        "pdf_visible_identifiers_redacted": 56,
+        "pdf_copies_reviewed": 8,
+        "pdf_unique_documents_visually_reviewed": 1
+      }
     }
   ],
   "completed": false,
