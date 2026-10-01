@@ -78,10 +78,10 @@
       },
       "removed_sources": [
         "Documents/ChatGPT/mathematics",
-        "Desktop/mathematics"
+        "Desktop/mathematics",
+        "Desktop/mathematics 2"
       ],
       "retained_sources": [
-        "Desktop/mathematics 2",
         "Desktop/名称未設定フォルダ 2/mathematics"
       ]
     },
