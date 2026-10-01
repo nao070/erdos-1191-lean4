@@ -43,7 +43,7 @@ restore_math_archive.py   Dataset downloader and integrity verifier
 archive-index.json        Machine-readable inventory of verified datasets
 ```
 
-The source tree contains 1,477 research files. The dataset inventory currently includes 126,273 file entries, including historical snapshots and duplicate copies. The large Erdős #677 experiment dataset is still being transferred; it becomes available through the downloader after verification. [The inventory](archive-index.json) is the authoritative availability record.
+More than 1,400 research source files are available directly in the repository. The dataset inventory currently includes 126,273 file entries, including historical snapshots and duplicate copies. The large Erdős #677 experiment dataset is still being transferred; it becomes available through the downloader after verification. [The inventory](archive-index.json) is the authoritative availability record.
 
 ## Reproduce and contribute
 
