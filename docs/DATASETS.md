@@ -11,7 +11,7 @@ Browse source files directly in [`research/mathematics/`](../research/mathematic
 | `lean-proof-samples` | 27 | about 32 KB | Small Lean examples and proof-development samples |
 | `mathematics-downloads` | 66,051 | about 2.86 GB | Downloaded project packages and historical working snapshots |
 | `additional-c143-experiments-and-references` | 543 | about 321 MB | C140–C143 experiments and supporting reference material |
-| `erdos677-experiment-results` | Pending | about 24 GB | Search outputs and a persistent experiment index; transfer and verification are ongoing |
+| `erdos677-experiment-results` | 41 | about 23.63 GB | Search outputs and a persistent experiment index; verified and available |
 
 Sizes are decimal, approximate, and describe file contents rather than filesystem allocation. File-entry counts include repeated copies. Identical contents are stored once in a content-addressed archive. The inventory also contains an internal supplementary-object collection; the downloader resolves those objects automatically.
 
