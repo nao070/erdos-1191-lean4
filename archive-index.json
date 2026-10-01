@@ -72,9 +72,7 @@
           "q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally"
         ],
         "holds": [],
-        "pdf_visible_identifiers_redacted": 56,
-        "pdf_copies_reviewed": 8,
-        "pdf_unique_documents_visually_reviewed": 1
+        "pdf_review_dataset": "privacy-reviewed-pdf-objects"
       },
       "removed_sources": [
         "Documents/ChatGPT/mathematics",
