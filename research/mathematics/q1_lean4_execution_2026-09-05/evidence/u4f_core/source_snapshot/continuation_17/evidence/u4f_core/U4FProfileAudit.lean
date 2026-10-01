@@ -1,0 +1,93 @@
+import Q1.U4FProfile
+
+#check Erdos1191Q1.U4FProfile.profile_nonneg
+#check Erdos1191Q1.U4FProfile.profile_mono
+#check Erdos1191Q1.U4FProfile.sqrt_profile_mono
+#check Erdos1191Q1.U4FProfile.coverage_identity
+#check Erdos1191Q1.U4FProfile.weighted_sqrt_bound
+#check Erdos1191Q1.U4FProfile.variance_deficit
+#check Erdos1191Q1.U4FProfile.edge_defect
+#check Erdos1191Q1.U4FProfile.alpha_telescope_bound
+#check Erdos1191Q1.U4FProfile.orientation_defect_increment
+#check Erdos1191Q1.U4FProfile.orientation_component_flip
+#check Erdos1191Q1.U4FProfile.paired_orientation_repeated_collision
+#check Erdos1191Q1.U4FProfile.old_quadruple_matching_algebra
+#check Erdos1191Q1.U4FProfile.plus_output_gt_minus
+#check Erdos1191Q1.U4FProfile.weighted_fiber_deficit_identity
+#check Erdos1191Q1.U4FProfile.bounded_integer_mass_first_moment
+#check Erdos1191Q1.U4FProfile.mem_tripartiteFiber
+#check Erdos1191Q1.U4FProfile.tripartiteFiber_card_le_min
+#check Erdos1191Q1.U4FProfile.fiber_deficit_increment
+
+#print axioms Erdos1191Q1.U4FProfile.profile_nonneg
+#print axioms Erdos1191Q1.U4FProfile.profile_mono
+#print axioms Erdos1191Q1.U4FProfile.sqrt_profile_mono
+#print axioms Erdos1191Q1.U4FProfile.coverage_identity
+#print axioms Erdos1191Q1.U4FProfile.weighted_sqrt_bound
+#print axioms Erdos1191Q1.U4FProfile.variance_deficit
+#print axioms Erdos1191Q1.U4FProfile.edge_defect
+#print axioms Erdos1191Q1.U4FProfile.alpha_telescope_bound
+#print axioms Erdos1191Q1.U4FProfile.orientation_defect_increment
+#print axioms Erdos1191Q1.U4FProfile.orientation_component_flip
+#print axioms Erdos1191Q1.U4FProfile.paired_orientation_repeated_collision
+#print axioms Erdos1191Q1.U4FProfile.old_quadruple_matching_algebra
+#print axioms Erdos1191Q1.U4FProfile.plus_output_gt_minus
+#print axioms Erdos1191Q1.U4FProfile.weighted_fiber_deficit_identity
+#print axioms Erdos1191Q1.U4FProfile.bounded_integer_mass_first_moment
+#print axioms Erdos1191Q1.U4FProfile.mem_tripartiteFiber
+#print axioms Erdos1191Q1.U4FProfile.tripartiteFiber_card_le_min
+#print axioms Erdos1191Q1.U4FProfile.fiber_deficit_increment
+
+#check Erdos1191Q1.U4FProfile.fiber_exchange_collision_identity
+#check Erdos1191Q1.U4FProfile.fiber_exchange_deficit_identity
+#check Erdos1191Q1.U4FProfile.profile_step
+#check Erdos1191Q1.U4FProfile.quadruple_product_sum_bound
+
+#print axioms Erdos1191Q1.U4FProfile.fiber_exchange_collision_identity
+#print axioms Erdos1191Q1.U4FProfile.fiber_exchange_deficit_identity
+#print axioms Erdos1191Q1.U4FProfile.profile_step
+#print axioms Erdos1191Q1.U4FProfile.quadruple_product_sum_bound
+
+#check Erdos1191Q1.U4FProfile.signed_integer_tail_first_moment
+#print axioms Erdos1191Q1.U4FProfile.signed_integer_tail_first_moment
+
+#check Erdos1191Q1.U4FProfile.sidon_ordered_pair_recovery
+#print axioms Erdos1191Q1.U4FProfile.sidon_ordered_pair_recovery
+
+#check Erdos1191Q1.U4FProfile.integer_kernel_prefix_identity
+#check Erdos1191Q1.U4FProfile.selected_integer_kernel_bound
+#print axioms Erdos1191Q1.U4FProfile.integer_kernel_prefix_identity
+#print axioms Erdos1191Q1.U4FProfile.selected_integer_kernel_bound
+
+#check Erdos1191Q1.U4FProfile.priced_component_far_bound
+#print axioms Erdos1191Q1.U4FProfile.priced_component_far_bound
+
+#check Erdos1191Q1.U4FProfile.integer_capacity_deletion_identity
+#print axioms Erdos1191Q1.U4FProfile.integer_capacity_deletion_identity
+
+#check Erdos1191Q1.U4FProfile.mixed_shift_fiber_card_bound
+#print axioms Erdos1191Q1.U4FProfile.mixed_shift_fiber_card_bound
+
+#check Erdos1191Q1.U4FProfile.source_pair_product_identity
+#print axioms Erdos1191Q1.U4FProfile.source_pair_product_identity
+
+#check Erdos1191Q1.U4FProfile.mixed_shift_chain_balance
+#print axioms Erdos1191Q1.U4FProfile.mixed_shift_chain_balance
+
+#check Erdos1191Q1.U4FProfile.source_row_endpoint_recovery
+#print axioms Erdos1191Q1.U4FProfile.source_row_endpoint_recovery
+
+#check Erdos1191Q1.U4FProfile.row_window_capacity_dominated
+#print axioms Erdos1191Q1.U4FProfile.row_window_capacity_dominated
+
+#check Erdos1191Q1.U4FProfile.interval_deficit_mono
+#print axioms Erdos1191Q1.U4FProfile.interval_deficit_mono
+
+#check Erdos1191Q1.U4FProfile.source_birth_product_bound
+#print axioms Erdos1191Q1.U4FProfile.source_birth_product_bound
+
+#check Erdos1191Q1.U4FProfile.alpha_cube_tail_step
+#print axioms Erdos1191Q1.U4FProfile.alpha_cube_tail_step
+
+#check Erdos1191Q1.U4FProfile.fixed_birth_output_recovery
+#print axioms Erdos1191Q1.U4FProfile.fixed_birth_output_recovery

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Harness Evolution"
+  short_description: "Evidence-gated outer-loop improvement for the #1191 research harness"
+policy:
+  allow_implicit_invocation: false

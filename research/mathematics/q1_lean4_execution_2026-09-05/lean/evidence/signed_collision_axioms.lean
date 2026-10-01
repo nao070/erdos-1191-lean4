@@ -1,0 +1,18 @@
+import Q1.SignedCollision
+
+#print axioms Erdos1191Q1.SignedCollision.centered_variance_le
+#print axioms Erdos1191Q1.SignedCollision.born
+#print axioms Erdos1191Q1.SignedCollision.retired
+#print axioms Erdos1191Q1.SignedCollision.born_nonneg
+#print axioms Erdos1191Q1.SignedCollision.born_add_retired
+#print axioms Erdos1191Q1.SignedCollision.twice_born_sub_retired
+#print axioms Erdos1191Q1.SignedCollision.retired_le_twice_born
+#print axioms Erdos1191Q1.SignedCollision.retired_le_twice_born_of_centered
+#print axioms Erdos1191Q1.SignedCollision.retired_le_twice_born_of_partition
+#print axioms Erdos1191Q1.SignedCollision.weighted_retired_le_twice_born
+#print axioms Erdos1191Q1.SignedCollision.energy_le_diagonal_add_six_born
+#print axioms Erdos1191Q1.SignedCollision.energy_gap_div_six_le_born
+#print axioms Erdos1191Q1.SignedCollision.signed_diagonal_increment
+#print axioms Erdos1191Q1.SignedCollision.weighted_energy_gap_div_six_le_born
+#print axioms Erdos1191Q1.SignedCollision.canonical_diagonal_ratio
+#print axioms Erdos1191Q1.SignedCollision.normalized_signed_diagonal_le

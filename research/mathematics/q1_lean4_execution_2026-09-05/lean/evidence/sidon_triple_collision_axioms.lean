@@ -1,0 +1,18 @@
+import Q1.SidonTripleCollision
+
+#print axioms Erdos1191Q1.SidonTripleCollision.triple
+#print axioms Erdos1191Q1.SidonTripleCollision.triple_card
+#print axioms Erdos1191Q1.SidonTripleCollision.triple_sum
+#print axioms Erdos1191Q1.SidonTripleCollision.mem_triple
+#print axioms Erdos1191Q1.SidonTripleCollision.pair_eq_of_sum_eq
+#print axioms Erdos1191Q1.SidonTripleCollision.triples_eq_of_common_member
+#print axioms Erdos1191Q1.SidonTripleCollision.distinct_triples_disjoint
+#print axioms Erdos1191Q1.SidonTripleCollision.SignedBefore
+#print axioms Erdos1191Q1.SidonTripleCollision.signedBefore_ne_zero
+#print axioms Erdos1191Q1.SidonTripleCollision.signed_difference_endpoints_unique
+#print axioms Erdos1191Q1.SidonTripleCollision.new_output_not_signedBefore
+#print axioms Erdos1191Q1.SidonTripleCollision.endpoint_sum_eq
+#print axioms Erdos1191Q1.SidonTripleCollision.sources_ordered_of_new_output
+#print axioms Erdos1191Q1.SidonTripleCollision.newest_counts
+#print axioms Erdos1191Q1.SidonTripleCollision.retired_endpoints_collision
+#print axioms Erdos1191Q1.SidonTripleCollision.retired_sources_yield_collision

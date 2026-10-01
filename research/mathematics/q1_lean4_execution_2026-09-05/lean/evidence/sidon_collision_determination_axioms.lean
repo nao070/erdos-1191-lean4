@@ -1,0 +1,9 @@
+import Q1.SidonCollisionDetermination
+
+#print axioms Erdos1191Q1.SidonCollisionDetermination.far_gap_ne_zero
+#print axioms Erdos1191Q1.SidonCollisionDetermination.far_pair_unique
+#print axioms Erdos1191Q1.SidonCollisionDetermination.collisions
+#print axioms Erdos1191Q1.SidonCollisionDetermination.mem_collisions_iff
+#print axioms Erdos1191Q1.SidonCollisionDetermination.collision_multisets_disjoint
+#print axioms Erdos1191Q1.SidonCollisionDetermination.near_projection_injective
+#print axioms Erdos1191Q1.SidonCollisionDetermination.collisions_card_le_cube

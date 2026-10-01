@@ -1,0 +1,7 @@
+import Q1.SignedAbsoluteCollision
+
+#print axioms Erdos1191Q1.SignedAbsoluteCollision.crossSum
+#print axioms Erdos1191Q1.SignedAbsoluteCollision.cross_abs_mul_le
+#print axioms Erdos1191Q1.SignedAbsoluteCollision.crossSum_le_reduced
+#print axioms Erdos1191Q1.SignedAbsoluteCollision.crossSum_le_four_squares
+#print axioms Erdos1191Q1.SignedAbsoluteCollision.absolute_retired_le_twice_born

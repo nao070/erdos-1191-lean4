@@ -1,0 +1,55 @@
+/-
+Copyright (c) 2026 Research Contributor. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: OpenAI Codex
+-/
+import Erdos1191
+
+-- The output of this file is captured verbatim in `evidence/axioms.txt`.
+#print axioms Erdos1191.additiveSidonNat_iff_additiveSidon
+#print axioms Erdos1191.additiveSidonNatUpTo_iff_additiveSidonUpTo
+#print axioms Erdos1191.additiveSidon_iff_positiveDifferenceUnique
+#print axioms Erdos1191.additiveSidonNat_iff_positiveDifferenceUnique
+#print axioms Erdos1191.additiveSidonUpTo_iff_positiveDifferenceUniqueUpTo
+#print axioms Erdos1191.sum_adjacentGap_Ico
+#print axioms Erdos1191.positiveDifferenceUniqueUpTo_iff_contiguousGapSumsUniqueUpTo
+#print axioms Erdos1191.additiveSidonUpTo_iff_contiguousGapSumsUniqueUpTo
+#print axioms Erdos1191.additiveSidonNatUpTo_iff_contiguousGapSumsUniqueUpTo
+#print axioms Erdos1191.adjacentGap_pos
+#print axioms Erdos1191.adjacentGap_injectiveUpTo
+#print axioms Erdos1191.adjacentGaps_positive_and_distinct
+#print axioms Erdos1191.emptyInterval_endpointMutation_is_false
+#print axioms Erdos1191.sum_forwardDiff_range
+#print axioms Erdos1191.finiteAbel_range
+#print axioms Erdos1191.finiteAbel_rational_fixture
+#print axioms Erdos1191.prefixScaleCurl
+#print axioms Erdos1191.finiteScaleAbel_terminal
+#print axioms Erdos1191.finiteEpochFlux_range
+#print axioms Erdos1191.finiteGridDivergence_range
+#print axioms Erdos1191.finiteEpochScaleAbel_transport
+#print axioms Erdos1191.finiteEpochScaleAbel_transport_fromPotential
+#print axioms Erdos1191.adjacentEpochTwoEdgeFourScaleLedger
+#print axioms Erdos1191.sameAtomAdjacentEpochFourScaleLedger
+#print axioms Erdos1191.finiteSignedPrimitiveToNetRow
+#print axioms Erdos1191.ownerFiberPartitionSum
+#print axioms Erdos1191.ownerQuadraticShares_sum
+#print axioms Erdos1191.finiteQuadraticEnergy_eq_doubleSum
+#print axioms Erdos1191.threeCoordinateOwnerStitchMatrixLeft_symmetric
+#print axioms Erdos1191.threeCoordinateOwnerStitchMatrixRight_symmetric
+#print axioms Erdos1191.threeCoordinateOwnerStitchMatrixLeft_rowSum
+#print axioms Erdos1191.threeCoordinateOwnerStitchMatrixRight_rowSum
+#print axioms Erdos1191.threeCoordinateOwnerStitchMatrixLeft_energy
+#print axioms Erdos1191.threeCoordinateOwnerStitchMatrixRight_energy
+#print axioms Erdos1191.threeCoordinateOwnerStitchMatrixLeft_nonnegative
+#print axioms Erdos1191.threeCoordinateOwnerStitchMatrixRight_nonnegative
+#print axioms Erdos1191.threeCoordinateOwnerStitchLocalEnergies
+#print axioms Erdos1191.threeCoordinateOwnerStitchEnergy
+#print axioms Erdos1191.threeCoordinateOwnerStitchLocalLeftShare
+#print axioms Erdos1191.threeCoordinateOwnerStitchLocalRightShare
+#print axioms Erdos1191.threeCoordinateOwnerStitchShare
+#print axioms Erdos1191.threeCoordinateTwoOwnerStitchingObstruction
+#print axioms Erdos1191.fejerRatio_three
+#print axioms Erdos1191.fejerRatio_ge_nineSixteenths
+#print axioms Erdos1191.c118CoefficientBarrier_value
+#print axioms Erdos1191.c118NecessaryCoefficientBarrier
+#print axioms Erdos1191.c118OneThirdCoefficientBoxNoGo

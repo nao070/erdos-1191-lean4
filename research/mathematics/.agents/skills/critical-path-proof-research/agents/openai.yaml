@@ -1,0 +1,5 @@
+interface:
+  display_name: "critical-path-proof-research (COLD)"
+  short_description: "Unvalidated COLD candidate; explicit evaluation only"
+policy:
+  allow_implicit_invocation: false

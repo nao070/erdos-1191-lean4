@@ -1,0 +1,56 @@
+version: 1
+registry:
+  reported_total_tools: 85
+  servers:
+    lean-lsp: 23
+    arxiv: 19
+    semantic-scholar: 14
+    context-mode: 11
+    lean-explore: 8
+    zbmath: 5
+    mcp-oeis: 3
+    exa: 2
+
+exposure_policy:
+  adaptive: true
+  preferred_visible_tools_min: 5
+  preferred_visible_tools_max: 12
+  soft_visible_tools_ceiling: 20
+  notes:
+    - "These are engineering starting points, not universal optima."
+    - "If an atomic MCP server itself exceeds the soft ceiling, keep it when necessary and avoid overlapping servers."
+    - "Never claim per-tool deferred loading exists unless the current host/runtime probe confirms it."
+
+roles:
+  math-lead:
+    start_servers: []
+    optional_servers: [context-mode, exa, zbmath]
+    rule: "Use external tools only for a named gap; direct mathematical reasoning is not a tool-usage benchmark."
+  literature-discovery:
+    staged_servers:
+      - [zbmath, exa]
+      - [arxiv]
+      - [semantic-scholar]
+    rule: "Escalate stages only when the prior stage leaves a named unresolved literature question."
+  lean-retrieval:
+    staged_servers:
+      - [lean-explore]
+      - [lean-lsp]
+    rule: "Retrieve declarations first when possible; use LSP for project-state-aware proving."
+  lean-edit:
+    start_servers: [lean-lsp]
+    optional_servers: [lean-explore]
+    rule: "Avoid unrelated literature servers during proof editing unless an external theorem blocks progress."
+  exact-computation:
+    start_servers: []
+    optional_servers: [mcp-oeis]
+    rule: "Prefer local integer/rational/certified computations. CAS is optional only after runtime availability is probed."
+  independent-verifier:
+    start_servers: [lean-lsp]
+    optional_servers: []
+    rule: "No web/literature search and no write/repair authority toward the candidate under judgment."
+
+exa_contract:
+  known_fields: [query, numResults]
+  additionalQueries_supported: false
+  fallback: "Issue separate explicit query expansions; do not invent an unsupported argument."

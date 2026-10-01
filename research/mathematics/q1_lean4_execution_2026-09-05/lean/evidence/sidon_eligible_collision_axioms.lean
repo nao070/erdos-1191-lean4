@@ -1,0 +1,4 @@
+import Q1.SidonEligibleCollision
+
+#print axioms Erdos1191Q1.SidonEligibleCollision.eligible_endpoints_collision
+#print axioms Erdos1191Q1.SidonEligibleCollision.eligible_sources_yield_collision

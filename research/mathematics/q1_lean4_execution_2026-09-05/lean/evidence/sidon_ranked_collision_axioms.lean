@@ -1,0 +1,6 @@
+import Q1.SidonRankedCollision
+
+#print axioms Erdos1191Q1.SidonRankedCollision.SignedBeforeRank
+#print axioms Erdos1191Q1.SidonRankedCollision.signedBeforeRank_iff
+#print axioms Erdos1191Q1.SidonRankedCollision.ranked_signed_endpoints_unique
+#print axioms Erdos1191Q1.SidonRankedCollision.ranked_eligible_sources_yield_collision
