@@ -306,7 +306,7 @@
         "digest": "sha256:7f3b961357d73e2c4f93fe43bfd8ddabd4daaaacde3ccfb20245a809e484c799"
       },
       "verified": true,
-      "deleted": false,
+      "deleted": true,
       "logical_bytes": 320954407,
       "compressed_bytes": 22055356,
       "parts": 1,
@@ -318,7 +318,24 @@
         "replacements": 38,
         "expanded_containers": 5,
         "pdf_metadata_removed": 2
-      }
+      },
+      "removed_sources": [
+        "Downloads/2026-09-03-c143-s32-s41-fullroot-exact-phase-design.md",
+        "Downloads/C140_ALL563_MAC_RUNNER_2026-09-03",
+        "Downloads/C140_ALL563_MAC_RUNNER_2026-09-03.zip",
+        "Downloads/C142_OVERNIGHT_UNIFORMIZATION_ENGINE_2026-09-03",
+        "Downloads/C142_OVERNIGHT_UNIFORMIZATION_ENGINE_2026-09-03.zip",
+        "Downloads/C143_S32_S41_FULLROOT_EXACT_PHASE_2026-09-03",
+        "Downloads/C143_S32_S41_FULLROOT_EXACT_PHASE_2026-09-03.zip",
+        "Downloads/C143_S32_S41_FULLROOT_EXACT_PHASE_2026-09-04_V2",
+        "Downloads/C143_S32_S41_FULLROOT_EXACT_PHASE_2026-09-04_V2 2",
+        "Downloads/C143_S32_S41_FULLROOT_EXACT_PHASE_2026-09-04_V2(1).zip",
+        "Downloads/cdc_proof.pdf",
+        "Downloads/claude_erdos1191_math_research_full_prompt.txt",
+        "Downloads/ten-proofs-oai.pdf",
+        "Desktop/c143_sample.txt"
+      ],
+      "retained_sources": []
     }
   ],
   "completed": false,
