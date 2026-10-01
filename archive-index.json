@@ -96,7 +96,7 @@
         "digest": "sha256:3d3845200979e30f3dbb81371eadda732a69db6c96bd5f80be7edfeace0d282c"
       },
       "verified": true,
-      "deleted": false,
+      "deleted": true,
       "logical_bytes": 27036,
       "compressed_bytes": 7855,
       "parts": 1,
@@ -107,7 +107,14 @@
         "text_files_inspected": 27,
         "replacements": 0,
         "lean_code_unchanged": 9
-      }
+      },
+      "removed_sources": [
+        "lean_test",
+        "Downloads/magic3_lean",
+        "Downloads/magic3_lean_fixed",
+        "lean4-mcp/small-sorry-project-src"
+      ],
+      "retained_sources": []
     }
   ],
   "completed": false,
