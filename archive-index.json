@@ -76,9 +76,10 @@
         "pdf_copies_reviewed": 8,
         "pdf_unique_documents_visually_reviewed": 1
       },
-      "removed_sources": [],
+      "removed_sources": [
+        "Documents/ChatGPT/mathematics"
+      ],
       "retained_sources": [
-        "Documents/ChatGPT/mathematics",
         "Desktop/mathematics",
         "Desktop/mathematics 2",
         "Desktop/名称未設定フォルダ 2/mathematics"
