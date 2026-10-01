@@ -356,7 +356,7 @@
         "digest": "sha256:49ab517ec9595b2a6beecdff5d3b4de8be440e84fcda62a3f1fcef39e023d7e3"
       },
       "verified": true,
-      "deleted": false,
+      "deleted": true,
       "logical_bytes": 23629202575,
       "compressed_bytes": 11215021723,
       "parts": 335,
@@ -367,7 +367,11 @@
         "text_files_inspected": 40,
         "replacements": 0,
         "binary_bytes_inspected": 23627169792
-      }
+      },
+      "removed_sources": [
+        "Downloads/erdos677-search"
+      ],
+      "retained_sources": []
     }
   ],
   "completed": false,
