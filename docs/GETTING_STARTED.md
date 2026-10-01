@@ -1,4 +1,4 @@
-# Getting started
+# Getting started with Erdős #1191 and Lean 4
 
 ## Read without installing anything
 
@@ -13,8 +13,8 @@ Historical copies are retained for traceability. A filename containing “proof�
 ## Get the source code
 
 ```sh
-git clone https://github.com/nao070/mathematics-research-archive.git
-cd mathematics-research-archive
+git clone https://github.com/nao070/erdos-1191-lean4.git
+cd erdos-1191-lean4
 ```
 
 Alternatively, use GitHub's **Code → Download ZIP** to obtain the browsable source tree. Large experimental datasets are stored separately in release assets and are not included in that ZIP.

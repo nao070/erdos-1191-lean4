@@ -27,7 +27,7 @@ def main():
     parser.add_argument('--list', action='store_true', help='List datasets without restoring')
     parser.add_argument('--dataset', action='append', help='Dataset label to restore; repeat to select several')
     parser.add_argument('--destination', default='math-restored', help='Empty restoration destination')
-    parser.add_argument('--repo', default='nao070/mathematics-research-archive', help='GitHub owner/repository')
+    parser.add_argument('--repo', default='nao070/erdos-1191-lean4', help='GitHub owner/repository')
     parser.add_argument('--authenticated', action='store_true', help='Use GitHub CLI credentials for a private archive')
     args = parser.parse_args()
     REPO = args.repo
