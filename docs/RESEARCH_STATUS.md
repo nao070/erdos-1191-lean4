@@ -12,7 +12,7 @@ The [finite kernel](../research/mathematics/erdos1191_PROOF_RESET_WORK_2026-08-2
 
 The dataset collection contains search outputs, exact checks, intermediate experiments, and historical snapshots. Such evidence must be interpreted with its actual input range, assumptions, and implementation. A finite experiment alone does not settle an asymptotic or universally quantified claim.
 
-The Erdős #677 experiment collection includes a large persistent search index. Its transfer is ongoing. The downloader offers a dataset only after the archive inventory marks it verified.
+The Erdős #677 experiment collection includes a large persistent search index. It is available as a verified dataset. The downloader offers a dataset only after the archive inventory marks it verified.
 
 ## What “verified” means in the dataset inventory
 
