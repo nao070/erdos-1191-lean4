@@ -1,38 +1,52 @@
-# 数学研究アーカイブ（個人情報を除去した版）
+# Mathematics Research Archive
 
-研究ノート、証明コード、参考資料、実験結果をまとめた非公開アーカイブです。閲覧できる研究ソースは`research/mathematics/`、大容量の保存データはGitHubのReleases、保存と検証の状態は`archive-index.json`にあります。
+Research notes, Lean 4 developments, and computational experiments in additive combinatorics, with a focus on Erdős problem #1191 and Sidon sets.
 
-## 個人情報の処理
+[Browse the research](research/mathematics/) · [Getting started](docs/GETTING_STARTED.md) · [Research status](docs/RESEARCH_STATUS.md) · [Datasets](docs/DATASETS.md)
 
-- 利用者に関係する氏名、Macのユーザー名、個人用GitHub識別子、テキスト中のメールアドレス・認識できる秘密情報を置換しました。
-- manifestのパスはホームディレクトリからの相対パスとし、所有者名・元の絶対パス・inode等は保存しません。保存時刻・権限も標準化します。
-- ZIPとtarを展開し、内部の資料も検査して保存します。復元すると、元の圧縮ファイルは`ファイル名.contents`というフォルダになります。
-- PDFの文書メタデータや注釈を取り除きます。本文に利用者情報があった研究ガイドは該当文字をPDFの内容から除去し、文字の再抽出・内部ストリーム・全18ページの表示を確認しました。その原本と一致するコピーにも確認済みの匿名化版を使います。その他の未確認PDFは保留します。公刊論文の第三者の著者名・連絡先は、利用者の情報と区別します。
-- 元のGit履歴、再生成できる依存関係・ビルド出力、macOSの付随メタデータはアップロード対象外です。Leanのバージョン指定や依存のmanifestは保存します。
-- 内容が同じファイルはSHA-256で共有し、各資料の保存後に全アーカイブを読み戻してハッシュと既知の識別情報の有無を検査します。
-- 画像は文字認識・顔検出・GPSと既知の識別情報を検査し、Officeファイルは内部XMLと文書の作成者等を処理します。判断できない資料、識別情報が見つかったバイナリ等はMacに残して保留します。未知の個人情報すべての不在を保証する仕組みではありません。
+## Start here
 
-数学の宣言や証明を作り直す処理は行いません。Leanファイルはコメントを除いたコードが匿名化前後で同じことを確認します。未解決・途中の研究も、その状態の資料です。
+| What you want to do | Where to start |
+|---|---|
+| Understand the mathematical target and supporting results | [Erdős #1191: formulation and Lean developments](research/mathematics/q1_lean4_execution_2026-09-05/lean/README.md) |
+| Explore a smaller finite formalization | [Finite Lean kernel](research/mathematics/erdos1191_PROOF_RESET_WORK_2026-08-29/lean_kernel/README.md) |
+| Read the research workflow and sources | [Source map](research/mathematics/SOURCE_MAP.md) |
+| Download notes, experiments, or complete working snapshots | [Dataset guide](docs/DATASETS.md) |
 
-## 復元
+**Research status:** this collection includes work in progress, supporting lemmas, and computational evidence. It does not establish a solution to Erdős problem #1191. See [research status](docs/RESEARCH_STATUS.md) for the scope of each development.
 
-Python 3と、非公開リポジトリを読める状態のGitHub CLIが必要です。リポジトリをcloneし、そのディレクトリで次を実行します。
+## Download a dataset
+
+Python 3 is sufficient. No GitHub account or third-party Python packages are required.
 
 ```sh
+git clone https://github.com/nao070/mathematics-research-archive.git
+cd mathematics-research-archive
 python3 restore_math_archive.py --list
-python3 restore_math_archive.py --dataset mathematics-workspaces --destination math-restored
+python3 restore_math_archive.py --dataset research-notes --destination research-notes
 ```
 
-全部を復元する場合：
+For complete research workspaces:
 
 ```sh
-python3 restore_math_archive.py --destination math-restored
+python3 restore_math_archive.py --dataset mathematics-workspaces --destination workspaces
 ```
 
-cloneしていない場所で実行する場合は、`--repo OWNER/REPOSITORY`で保存先を指定してください。復元先は空のディレクトリにしてください。元のMac上の場所は上書きしません。
+The downloader verifies SHA-256 checksums for manifests, download parts, and file contents. Use an empty destination directory. Shared archive objects are resolved automatically.
 
-ファイルの内容・各パート・manifestのSHA-256を検証し、ホームディレクトリからの相対構成で復元します。コピー間の共有ファイルがあるため、選んだ資料が別のデータセットのパートに入っている場合も、復元プログラムが必要なパートを自動で読みます。
+## Collection layout
 
-`privacy-reviewed-pdf-objects`は補足の保存オブジェクトです。匿名化PDFは`mathematics-workspaces`を復元すると元の研究ガイドの場所に含まれます。この補足を単独で選ぶ必要はありません。
+```text
+research/mathematics/      Browseable research notes and source code
+docs/                     Entry points, dataset guide, and research status
+restore_math_archive.py   Dataset downloader and integrity verifier
+archive-index.json        Machine-readable inventory of verified datasets
+```
 
-匿名化したパスには`/Users/USER`などの代替表記が残る場合があります。実行に必要なローカルパスは復元後に使用環境へ合わせてください。再生成可能な依存キャッシュと元のGit履歴は、この匿名化版からは復元されません。
+The source tree contains 1,477 research files. The dataset inventory currently includes 126,273 file entries, including historical snapshots and duplicate copies. The large Erdős #677 experiment dataset is still being transferred; it becomes available through the downloader after verification. [The inventory](archive-index.json) is the authoritative availability record.
+
+## Reproduce and contribute
+
+Lean projects retain their `lean-toolchain` and dependency manifests. Follow the README in the selected project and use its pinned environment. Generated dependencies and build outputs must be regenerated locally. Archived computations and previously recorded build results have not all been rerun for this publication.
+
+See [getting started](docs/GETTING_STARTED.md) and [contribution guidelines](CONTRIBUTING.md). Licenses included with individual projects and reference materials apply to those materials; this archive does not assign a single license to the entire collection.

@@ -1,7 +1,7 @@
 {
   "schema": 2,
-  "tag": "sanitized-2026-10-01",
-  "scope": "Privacy-filtered mathematical research sources and experiments",
+  "tag": "archive-2026-10-01",
+  "scope": "Mathematical research notes, Lean source code, and computational experiments",
   "datasets": [
     {
       "dataset_id": "20261001T002841Z-bad6a3-research-notes",
@@ -346,5 +346,6 @@
     "containers_expanded_and_scanned": true,
     "unreviewed_images_and_office_files_retained_locally": true
   },
-  "legacy_cleanup": "legacy repository deleted after verified sanitized migration"
+  "legacy_cleanup": "legacy repository deleted after verified sanitized migration",
+  "public_collection": true
 }

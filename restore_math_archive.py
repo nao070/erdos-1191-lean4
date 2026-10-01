@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Restore verified mathematical research from a private GitHub archive.
+"""Download and verify mathematical research datasets from GitHub.
 
-Requires Python 3 and an authenticated GitHub CLI (`gh auth login`).
-No original Mac paths are overwritten: use an empty destination directory.
+Requires Python 3; public datasets do not require a GitHub account or extra packages.
+Use an empty destination directory. Files elsewhere are never overwritten.
 """
 import argparse
 import base64
@@ -11,10 +11,12 @@ import io
 import json
 import os
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import tarfile
 import urllib.request
+import urllib.parse
 
 API = 'https://api.github.com'
 ORIGINAL_HOME = Path.home()
@@ -25,18 +27,39 @@ def main():
     parser.add_argument('--list', action='store_true', help='List datasets without restoring')
     parser.add_argument('--dataset', action='append', help='Dataset label to restore; repeat to select several')
     parser.add_argument('--destination', default='math-restored', help='Empty restoration destination')
-    parser.add_argument('--repo', help='GitHub owner/repository; defaults to the current cloned repository')
+    parser.add_argument('--repo', default='nao070/mathematics-research-archive', help='GitHub owner/repository')
+    parser.add_argument('--authenticated', action='store_true', help='Use GitHub CLI credentials for a private archive')
     args = parser.parse_args()
-    REPO = args.repo or json.loads(subprocess.check_output(
-        ['gh', 'repo', 'view', '--json', 'nameWithOwner'], text=True))['nameWithOwner']
-    token = subprocess.check_output(['gh', 'auth', 'token'], text=True).strip()
+    REPO = args.repo
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9-]*/[A-Za-z0-9_.-]+', REPO):
+        parser.error('--repo must be OWNER/REPOSITORY')
+    token = subprocess.check_output(['gh', 'auth', 'token'], text=True).strip() if args.authenticated else None
+
+    class SafeRedirect(urllib.request.HTTPRedirectHandler):
+        def redirect_request(self, req, fp, code, msg, headers, newurl):
+            redirected = super().redirect_request(req, fp, code, msg, headers, newurl)
+            if redirected and urllib.parse.urlsplit(newurl).hostname != urllib.parse.urlsplit(req.full_url).hostname:
+                redirected.remove_header('Authorization')
+            return redirected
+
+    opener = urllib.request.build_opener(SafeRedirect())
 
     def fetch(path, binary=False):
-        req = urllib.request.Request(API + path, headers={
-            'Authorization': 'Bearer ' + token,
+        headers = {
             'Accept': 'application/octet-stream' if binary else 'application/vnd.github+json',
-            'User-Agent': 'Verified-Math-Restore', 'X-GitHub-Api-Version': '2022-11-28'})
-        return urllib.request.urlopen(req, timeout=120)
+            'User-Agent': 'Mathematics-Archive-Restore', 'X-GitHub-Api-Version': '2022-11-28'}
+        if token:
+            headers['Authorization'] = 'Bearer ' + token
+        return opener.open(urllib.request.Request(API + path, headers=headers), timeout=120)
+
+    def asset_stream(asset):
+        if token:
+            return fetch(f'/repos/{REPO}/releases/assets/{asset["id"]}', True)
+        tag = urllib.parse.quote(index['tag'], safe='')
+        name = urllib.parse.quote(asset['name'], safe='')
+        return opener.open(urllib.request.Request(
+            f'https://github.com/{REPO}/releases/download/{tag}/{name}',
+            headers={'User-Agent': 'Mathematics-Archive-Restore'}), timeout=120)
 
     def get_json(path):
         with fetch(path) as response:
@@ -44,17 +67,23 @@ def main():
 
     def manifest(item):
         asset = item['manifest_asset']
-        with fetch(f'/repos/{REPO}/releases/assets/{asset["id"]}', True) as response:
+        with asset_stream(asset) as response:
             data = response.read()
         if len(data) != asset['size'] or 'sha256:' + hashlib.sha256(data).hexdigest() != asset['digest']:
             raise RuntimeError('Manifest checksum mismatch')
         return json.loads(data)
 
-    item = get_json(f'/repos/{REPO}/contents/archive-index.json')
-    index = json.loads(base64.b64decode(item['content']))
+    if token:
+        item = get_json(f'/repos/{REPO}/contents/archive-index.json')
+        index = json.loads(base64.b64decode(item['content']))
+    else:
+        with opener.open(f'https://raw.githubusercontent.com/{REPO}/main/archive-index.json', timeout=120) as response:
+            index = json.load(response)
     datasets = [d for d in index['datasets'] if d.get('verified')]
     if args.list:
         for data in datasets:
+            if not data['sources']:
+                continue
             print(data['label'], f'{data["logical_bytes"] / 1e9:.3f} GB', 'verified')
             for path in data['sources']:
                 print('  ', path)
@@ -111,7 +140,7 @@ def main():
                         self.asset = next(self.parts)
                     except StopIteration:
                         return 0
-                    self.response = fetch(f'/repos/{REPO}/releases/assets/{self.asset["id"]}', True)
+                    self.response = asset_stream(self.asset)
                     self.hash = hashlib.sha256()
                     self.size = 0
                 block = self.response.read(len(target))
