@@ -79,6 +79,35 @@
         "Desktop/mathematics 2",
         "Desktop/名称未設定フォルダ 2/mathematics"
       ]
+    },
+    {
+      "dataset_id": "20261001T002841Z-bad6a3-lean-proof-samples",
+      "label": "lean-proof-samples",
+      "sources": [
+        "lean_test",
+        "Downloads/magic3_lean",
+        "Downloads/magic3_lean_fixed",
+        "lean4-mcp/small-sorry-project-src"
+      ],
+      "manifest_asset": {
+        "id": 602091849,
+        "name": "20261001T002841Z-bad6a3-lean-proof-samples-manifest.json",
+        "size": 7536,
+        "digest": "sha256:3d3845200979e30f3dbb81371eadda732a69db6c96bd5f80be7edfeace0d282c"
+      },
+      "verified": true,
+      "deleted": false,
+      "logical_bytes": 27036,
+      "compressed_bytes": 7855,
+      "parts": 1,
+      "files": 27,
+      "privacy": {
+        "holds": [],
+        "held": 0,
+        "text_files_inspected": 27,
+        "replacements": 0,
+        "lean_code_unchanged": 9
+      }
     }
   ],
   "completed": false,
