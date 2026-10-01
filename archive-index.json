@@ -32,6 +32,46 @@
         "expanded_containers": 4,
         "excluded_rebuildable_or_metadata": 3
       }
+    },
+    {
+      "dataset_id": "20261001T002841Z-bad6a3-mathematics-workspaces",
+      "label": "mathematics-workspaces",
+      "sources": [
+        "Documents/ChatGPT/mathematics",
+        "Desktop/mathematics",
+        "Desktop/mathematics 2",
+        "Desktop/名称未設定フォルダ 2/mathematics"
+      ],
+      "manifest_asset": {
+        "id": 602091029,
+        "name": "20261001T002841Z-bad6a3-mathematics-workspaces-manifest.json",
+        "size": 18994841,
+        "digest": "sha256:01e3b0249bc8058a13565d7a7a118ad910bf14a45cc20320c962d614fdc434c4"
+      },
+      "verified": true,
+      "deleted": false,
+      "logical_bytes": 2944787325,
+      "compressed_bytes": 43021950,
+      "parts": 1,
+      "files": 59585,
+      "privacy": {
+        "holds": [
+          "アーカイブ.zip.contents/q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally",
+          "q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally",
+          "アーカイブ.zip.contents/q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally",
+          "q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally",
+          "アーカイブ.zip.contents/q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally",
+          "q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally",
+          "アーカイブ.zip.contents/q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally",
+          "q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally"
+        ],
+        "held": 8,
+        "text_files_inspected": 59545,
+        "replacements": 25488,
+        "expanded_containers": 188,
+        "lean_code_unchanged": 576,
+        "pdf_metadata_removed": 40
+      }
     }
   ],
   "completed": false,
