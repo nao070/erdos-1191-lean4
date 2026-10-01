@@ -43,19 +43,25 @@
         "Desktop/名称未設定フォルダ 2/mathematics"
       ],
       "manifest_asset": {
-        "id": 602091029,
-        "name": "20261001T002841Z-bad6a3-mathematics-workspaces-manifest.json",
-        "size": 18994841,
-        "digest": "sha256:01e3b0249bc8058a13565d7a7a118ad910bf14a45cc20320c962d614fdc434c4"
+        "id": 602108085,
+        "name": "20261001T002841Z-bad6a3-mathematics-workspaces-privacy-reviewed-manifest.json",
+        "size": 18996787,
+        "digest": "sha256:5fef3518efcc6bf521e1d9f5a088c19932f7b20fa059e8330c4582a145b493cb"
       },
       "verified": true,
       "deleted": false,
-      "logical_bytes": 2944787325,
+      "logical_bytes": 2948583189,
       "compressed_bytes": 43021950,
       "parts": 1,
-      "files": 59585,
+      "files": 59593,
       "privacy": {
-        "holds": [
+        "held": 0,
+        "text_files_inspected": 59545,
+        "replacements": 25488,
+        "expanded_containers": 188,
+        "lean_code_unchanged": 576,
+        "pdf_metadata_removed": 40,
+        "resolved_holds": [
           "アーカイブ.zip.contents/q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally",
           "q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally",
           "アーカイブ.zip.contents/q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally",
@@ -65,12 +71,10 @@
           "アーカイブ.zip.contents/q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally",
           "q1_lean4_execution_2026-09-05/ERDOS1191_Q1_LEAN4_CODEX_PACK/PROMPT_GUIDE_JA.pdf: PDF visible personal identifier retained locally"
         ],
-        "held": 8,
-        "text_files_inspected": 59545,
-        "replacements": 25488,
-        "expanded_containers": 188,
-        "lean_code_unchanged": 576,
-        "pdf_metadata_removed": 40
+        "holds": [],
+        "pdf_visible_identifiers_redacted": 56,
+        "pdf_copies_reviewed": 8,
+        "pdf_unique_documents_visually_reviewed": 1
       },
       "removed_sources": [],
       "retained_sources": [
