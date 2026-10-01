@@ -71,7 +71,14 @@
         "expanded_containers": 188,
         "lean_code_unchanged": 576,
         "pdf_metadata_removed": 40
-      }
+      },
+      "removed_sources": [],
+      "retained_sources": [
+        "Documents/ChatGPT/mathematics",
+        "Desktop/mathematics",
+        "Desktop/mathematics 2",
+        "Desktop/名称未設定フォルダ 2/mathematics"
+      ]
     }
   ],
   "completed": false,
