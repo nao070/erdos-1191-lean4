@@ -374,14 +374,35 @@
       "retained_sources": []
     }
   ],
-  "completed": false,
+  "completed": true,
   "policy": {
     "home_relative_paths": true,
     "git_history_excluded": true,
     "rebuildable_caches_excluded": true,
     "containers_expanded_and_scanned": true,
-    "unreviewed_images_and_office_files_retained_locally": true
+    "unreviewed_images_and_office_files_retained_locally": true,
+    "images_ocr_inspected": true,
+    "office_xml_and_metadata_sanitized": true
   },
   "legacy_cleanup": "legacy repository deleted after verified sanitized migration",
-  "public_collection": true
+  "public_collection": true,
+  "uploads_completed": true,
+  "cleanup_completed": true,
+  "privacy_totals": {
+    "text_files_inspected": 126229,
+    "replacements": 40106,
+    "pdf_metadata_removed": 65,
+    "public_pdf_fragments_inspected": 2,
+    "expanded_containers": 419,
+    "excluded_rebuildable_or_metadata": 3,
+    "held": 0,
+    "lean_code_unchanged": 7692,
+    "pdf_visible_identifiers_redacted": 77,
+    "pdf_copies_reviewed": 11,
+    "pdf_unique_documents_visually_reviewed": 1,
+    "images_ocr_inspected": 2,
+    "binary_bytes_inspected": 23627181107,
+    "office_metadata_removed": 1
+  },
+  "source_view_files": 1481
 }
