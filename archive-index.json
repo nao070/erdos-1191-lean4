@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "tag": "sanitized-2026-10-01",
+  "scope": "Privacy-filtered mathematical research sources and experiments",
+  "datasets": [
+    {
+      "dataset_id": "20261001T002841Z-bad6a3-research-notes",
+      "label": "research-notes",
+      "sources": [
+        "erdos1191",
+        "Documents/2026math",
+        "Documents/erdos1191-research"
+      ],
+      "manifest_asset": {
+        "id": 602078802,
+        "name": "20261001T002841Z-bad6a3-research-notes-manifest.json",
+        "size": 16514,
+        "digest": "sha256:bba154dc0db0ccb2df9ce57f9c1eb1202751813dd5174a0aa229d9ede40b2c39"
+      },
+      "verified": true,
+      "deleted": false,
+      "logical_bytes": 1884787,
+      "compressed_bytes": 1138520,
+      "parts": 1,
+      "files": 59,
+      "privacy": {
+        "holds": [],
+        "text_files_inspected": 55,
+        "replacements": 10,
+        "pdf_metadata_removed": 2,
+        "public_pdf_fragments_inspected": 2,
+        "expanded_containers": 4,
+        "excluded_rebuildable_or_metadata": 3
+      }
+    }
+  ],
+  "completed": false,
+  "policy": {
+    "home_relative_paths": true,
+    "git_history_excluded": true,
+    "rebuildable_caches_excluded": true,
+    "containers_expanded_and_scanned": true,
+    "unreviewed_images_and_office_files_retained_locally": true
+  }
+}
